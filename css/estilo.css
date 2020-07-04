@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+}
+
+html, body{
+    overflow-x:hidden; 
+}
+
+body{
+    background:#d5e9ff;
+    font-family: "Trebuchet MS";
+}
+
+header{
+    height: 73px;
+    text-align: center;
+    width: 100%;
+    background: rgb(66, 145, 219);
+}
+
+header img{
+    margin-top: 5px;
+    height: 58px;
+    width:400px;
+}
+
+section{
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#arti{
+    float: left;
+    width: 100%;
+}
+
+article{
+    margin: 0 auto;
+    width: 100%;
+}
+
+#arti_res{
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+div#inp{
+    padding: 10px;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.4)
+}
+
+
+/* inputs */
+
+input[type = 'number']{
+    width: 225px;
+    margin:1% 0;
+    padding: 20px;
+    border-radius:9px;
+    text-align: center;
+    border:none;
+    color: #0067d5;
+    font-weight:500;
+
+    -moz-width: 225px;
+    -moz-margin:1% 0;
+    -moz-padding: 20px;
+    -moz-border-radius:9px;
+    -moz-text-align: center;
+    -moz-border:none;
+    -moz-color: #0067d5;
+    -moz-font-weight:500;
+}
+
+div#inp p{
+    padding: 0;
+    margin: 0;
+    -moz-padding: 0;
+    -moz-margin: 0;
+}
+
+input[type = 'number']:focus{
+    outline: none;
+    -moz-outline: none;
+}
+
+input[type = 'button']{
+    margin-top: 1.2%;
+    width: 120px;
+    text-align: center;
+    margin:0 auto;
+    color: #fff;
+    cursor: pointer;
+}
+
+p{
+    color: #0067d5;
+    padding: 0;
+    margin: 0;
+}
+
+/* FOOTER */
+footer{
+    padding: 7px;
+}
+
+footer h6{
+    font-weight: 200;
+    padding-top: 7px;
+    color: #fff;
+}
+
+/* div#res */
+
+div#res{
+    color: #0067d5;
+    width: 60%;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    font-weight:500;
+    font-size: 1em;
+}
+
+/* MOBILE  */
+@media screen and (max-width:569.98px) {
+    header img{margin-top: 11px; height: 45px; width:300px;}   
+
+    button{width: 75px; height: 40px;}
+    
+    button#clear{width:70px; height: 35px;padding: 2px; display: block;}
+
+    div#inp{width: 70%;}
+
+    input[type ="number"]{width: 200px;height:30px;font-size:1.1em;  }
+
+    div#f p#r{font-size: 1.070em; }
+
+    div#res{width: 80%; padding:5px;font-size: 1.2em;height: 40px;}
+
+    div#inp p{ font-size:1.2em; }
+
+    section{ margin: 50px auto;  }
+
+    div#btns{margin-bottom: 10px;}
+
+}
+
+@media (min-width: 570px) and (max-width:798.98px) {
+    header img{margin-top: 8px; height:56px; width:400px;}   
+
+    button{width: 93px; height: 47px;}
+
+
+    div#inp{margin:0 auto;text-align: center; width: 60%;}
+
+    div#inp p{ font-size:1.3em; }
+
+    div#res{width: 50%;font-size: 1.35em;}
+
+    input[type = 'number']{text-align: center; width: 300px;height: 25px; font-size:1.3em; }
+
+    section{ margin: 14px auto;  }
+
+    footer h6{
+        font-weight: 200;
+        padding-top: 7px;
+        color: #fff;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:799px){
+    header img{margin-top: 5px; height:60px; width:410px;} 
+
+    button{width: 85px; height: 45px;}
+
+    button#clear{width:85px; height: 45px;}
+
+    div#inp{margin:0 auto;text-align: center; width:70%;}
+
+    div#inp p{ font-size:1.6em;margin-right: 300px; }
+
+    div#res{width: 50%;padding: 6px;font-size: 1.5em;height: 50px;}
+
+    input[type = 'number']{text-align: left; width: 400px;height: 30px; font-size:1.4em; }
+
+    footer h6{
+        font-weight: 200;
+        padding-top: 7px;
+        color: #fff;
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:1200){
+    div#inp{margin:0 auto;text-align: center; width:30%;}
+
+    div#res{width: 40%;padding: 6px;font-size: 1.6em;height: 50px;}
+}
